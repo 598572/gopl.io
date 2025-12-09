@@ -9,11 +9,16 @@ package main
 import (
 	"fmt"
 	"os"
-	"strings"
+	"strings" // 字符串处理包
 )
 
-//!+
+// !+
+// main 打印所有命令行参数（方式3：使用strings.Join）
 func main() {
+	// 【Go vs Java】字符串连接
+	// Java:  String.join(" ", Arrays.copyOfRange(args, 1, args.length))
+	// Go:    strings.Join(os.Args[1:], " ")
+	// 注意：这是最高效和简洁的方式，推荐使用
 	fmt.Println(strings.Join(os.Args[1:], " "))
 }
 
