@@ -36,6 +36,7 @@ func main() {
 	// Java:  server.start();
 	// Go:    log.Fatal(http.ListenAndServe("localhost:8000", nil))
 	// 注意：ListenAndServe会阻塞，返回错误时log.Fatal退出程序
+	log.Println("Server started on http://localhost:8000")
 	log.Fatal(http.ListenAndServe("localhost:8000", nil))
 }
 
@@ -51,6 +52,7 @@ func handler(w http.ResponseWriter, r *http.Request) {
 	//        os.write(response.getBytes());
 	// Go:    fmt.Fprintf(w, "URL.Path = %q\n", r.URL.Path)
 	// 注意：%q 格式化为带引号的字符串，w实现了io.Writer接口
+	log.Println("请求路径：", r.URL.Path) // 打印请求路径
 	fmt.Fprintf(w, "URL.Path = %q\n", r.URL.Path)
 }
 

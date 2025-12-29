@@ -36,6 +36,7 @@ func main() {
 	//        http.HandleFunc("/count", counter)
 	http.HandleFunc("/", handler)
 	http.HandleFunc("/count", counter)
+	log.Println("服务器启动在 http://localhost:8000")
 	log.Fatal(http.ListenAndServe("localhost:8000", nil))
 }
 

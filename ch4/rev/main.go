@@ -16,7 +16,7 @@ import (
 
 func main() {
 	//!+array
-	// 【Go vs Java】数组 vs 切片
+	// 【Go vs Java】数组 vs main
 	// Java:  int[] a = {0, 1, 2, 3, 4, 5}; (数组)
 	// Go:    a := [...]int{0, 1, 2, 3, 4, 5} (数组，...自动推断长度)
 	// 注意：[...]int 是数组，[]int 是切片，数组长度固定且是类型的一部分

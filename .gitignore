@@ -1,0 +1,84 @@
+# ========== IDE 配置文件 ==========
+# JetBrains IDE (GoLand, IntelliJ IDEA)
+.idea/
+*.iml
+*.iws
+*.ipr
+out/
+
+# VSCode
+.vscode/
+*.code-workspace
+
+# GoLand specific
+.idea_modules/
+
+# ========== Go 编译产物 ==========
+# 可执行文件（编译后的二进制文件）
+# 注意：Go 编译后的可执行文件通常没有扩展名（Linux/Mac）或 .exe（Windows）
+
+# 忽略所有目录下名为 main 的可执行文件（但保留 main.go 源代码文件）
+**/main
+**/main.exe
+!**/main.go
+!**/main_test.go
+
+# 其他可执行文件扩展名
+*.exe
+*.exe~
+*.dll
+*.so
+*.dylib
+
+# Test binary, built with `go test -c`
+*.test
+**/*.test
+
+# Output of the go coverage tool
+*.out
+coverage.html
+
+# ========== Go 依赖和缓存 ==========
+# 依赖目录（如果需要的话，通常用 go.mod 管理，vendor/ 是可选的）
+vendor/
+
+# Go workspace file
+go.work
+go.work.sum
+
+# ========== 操作系统文件 ==========
+# macOS
+.DS_Store
+.AppleDouble
+.LSOverride
+._*
+
+# Windows
+Thumbs.db
+ehthumbs.db
+Desktop.ini
+$RECYCLE.BIN/
+
+# Linux
+*~
+.directory
+
+# ========== 临时文件和日志 ==========
+*.tmp
+*.temp
+*.log
+*.swp
+*.swo
+*~
+
+# ========== 备份文件 ==========
+*.bak
+*.backup
+*.old
+*~
+*.*~
+*.~master~
+
+# ========== 项目特定文件 ==========
+# 如果你有其他不需要提交的文件，可以添加在这里
+

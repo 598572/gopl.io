@@ -86,6 +86,7 @@ func fetch(url string, ch chan<- string) {
 	}
 
 	secs := time.Since(start).Seconds()
+
 	// 【Go vs Java】格式化字符串
 	// Java:  String.format("%.2fs  %7d  %s", secs, nbytes, url)
 	// Go:    fmt.Sprintf("%.2fs  %7d  %s", secs, nbytes, url)
