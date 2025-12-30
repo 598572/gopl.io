@@ -34,6 +34,8 @@ func main() {
 	// Go:    for 是唯一的循环关键字（没有while），input.Scan() 返回 bool
 	// 注意：Go的 for 条件不需要括号，但 {} 是必须的
 	for input.Scan() {
+		line := input.Text()
+		fmt.Printf("当前输入内容为：%s\n", line) // 优化后的打印格式，更明确地显示输入内容
 		// 【Go vs Java】获取当前行并更新计数
 		// Java:  counts.put(line, counts.getOrDefault(line, 0) + 1);
 		// Go:    直接用 [] 访问和赋值，未初始化的int默认值为0，可以直接 ++

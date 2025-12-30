@@ -9,7 +9,7 @@ package main
 import (
 	"fmt"
 	"os"
-	"strings" // 字符串处理包
+	"strings"
 )
 
 // !+
@@ -20,6 +20,11 @@ func main() {
 	// Go:    strings.Join(os.Args[1:], " ")
 	// 注意：这是最高效和简洁的方式，推荐使用
 	fmt.Println(strings.Join(os.Args[1:], " "))
+
+	//最后，如果不关心输出格式，只想看看输出值，或许只是为了调试，可以用 Println 为我们格式化输出。
+	//fmt.Println(os.Args[1:])
+	//输出：[新技能 xjn s]
+
 }
 
 //!-

@@ -30,7 +30,7 @@ func appendslice(x []int, y ...int) []int {
 
 // !+append
 // appendInt 演示切片append的底层实现原理
-// 【Go vs Java】切片 vs ArrayList
+// 【Go vs Java】main vs ArrayList
 // Java:  ArrayList<Integer> list = new ArrayList<>(); list.add(y);
 // Go:    slice = append(slice, y)
 // 注意：Go的切片是对底层数组的引用，包含指针、长度、容量三个字段
